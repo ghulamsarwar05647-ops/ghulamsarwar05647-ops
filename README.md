@@ -11,6 +11,7 @@
 ---
 
 ## 🔗 Connect With Me
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ghulam-mustafa-khan-6771753b8/)
 
 <p align="center">
 
