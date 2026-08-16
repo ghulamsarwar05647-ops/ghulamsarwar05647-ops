@@ -1,4 +1,4 @@
-# 🛡️ Ghulam Sarwar
+# 🛡️ Ghulam Mustafa 
 
 ### Cybersecurity Student | SOC Analyst | Blue Team | Defensive Security
 
@@ -311,19 +311,6 @@ Develop a machine-learning based system capable of classifying potentially malic
 
 [View Project](PROJECT-LINK)
 
----
-
-# 🔎 Threat Hunting Projects
-
-| Project                             | Status     | Link                 |
-| ----------------------------------- | ---------- | -------------------- |
-| Suspicious PowerShell Investigation | 🔵 Planned | [View](PROJECT-LINK) |
-| Brute Force Detection               | 🔵 Planned | [View](PROJECT-LINK) |
-| Malicious IP Investigation          | 🔵 Planned | [View](PROJECT-LINK) |
-| Windows Event Log Investigation     | 🔵 Planned | [View](PROJECT-LINK) |
-| Persistence Detection               | 🔵 Planned | [View](PROJECT-LINK) |
-
----
 
 # 📚 TryHackMe
 
@@ -349,7 +336,7 @@ Currently developing practical skills through hands-on defensive-security labs.
 
 **Current:** SOC Level 1 Learning Path
 
-**Profile:** [View TryHackMe Profile](TRYHACKME-LINK)
+**Profile:** [View TryHackMe Profile](T[![TryHackMe](https://img.shields.io/badge/TryHackMe-Profile-red?style=for-the-badge&logo=tryhackme&logoColor=white)](https://tryhackme.com/p/ghulamsarwar05647))
 
 ---
 
@@ -361,9 +348,9 @@ Currently developing practical skills through hands-on defensive-security labs.
 
 **Program:** Cybersecurity
 
-**Status:** [IN PROGRESS / COMPLETED]
+**Status:** [IN PROGRESS ]
 
-**Expected Completion:** [YEAR]
+**Expected Completion:** [3]
 
 ### 📜 Certificate
 
@@ -373,13 +360,13 @@ Currently developing practical skills through hands-on defensive-security labs.
 
 ## BTEC Level 5 — Cybersecurity
 
-**Institution:** [INSTITUTE NAME]
+**Institution:** [WOOLWHICH INSTITUTE DUBAI]
 
 **Qualification:** BTEC Level 5
 
 **Field:** Cybersecurity
 
-**Status:** [IN PROGRESS / COMPLETED]
+**Status:** [IN PROGRESS]
 
 ### 📜 Certificate
 
@@ -394,7 +381,7 @@ Currently developing practical skills through hands-on defensive-security labs.
 | CompTIA Security+ | CompTIA    | 🔵 Planned | [View](CERTIFICATE-LINK) |
 | CompTIA CySA+     | CompTIA    | 🔵 Planned | [View](CERTIFICATE-LINK) |
 | CompTIA Network+  | CompTIA    | 🔵 Planned | [View](CERTIFICATE-LINK) |
-| [Certification]   | [Provider] | 🔵 Planned | [View](CERTIFICATE-LINK) |
+
 
 ---
 
@@ -470,43 +457,6 @@ Currently developing practical skills through hands-on defensive-security labs.
 * [Ticketing System]
 * [Threat Intelligence Platform]
 
----
-
-# 📂 Portfolio
-
-### 🛡️ SOC / Blue Team
-
-[SIEM Log Analysis](PROJECT-LINK)
-
-[Incident Response Lab](PROJECT-LINK)
-
-[Threat Hunting Lab](PROJECT-LINK)
-
-[Phishing Investigation](PROJECT-LINK)
-
-[IDS Project](PROJECT-LINK)
-
-### 🐍 Security Automation
-
-[Python File Integrity Monitor](PROJECT-LINK)
-
-[Security Log Analyzer](PROJECT-LINK)
-
-[Port Scanner](PROJECT-LINK)
-
-### 🦠 Malware Analysis
-
-[Malware Analysis Sandbox](PROJECT-LINK)
-
-[IOC Extraction Tool](PROJECT-LINK)
-
-### ☁️ Cloud Security
-
-[Cloud Security Lab](PROJECT-LINK)
-
-[Cloud Misconfiguration Detection](PROJECT-LINK)
-
----
 
 # 📸 Project Evidence
 
@@ -553,11 +503,13 @@ All projects include:
 
 </p>
 
-📧 Email: [YOUR EMAIL]
+📧 Email: [ghulamsarwar05647@gmail.com
+]
 
-💼 LinkedIn: [YOUR LINKEDIN]
+💼 LinkedIn: [www.linkedin.com/in/
+ghulam-mustafa-khan-6771753b8
+]
 
-🐙 GitHub: [YOUR GITHUB]
 
 ---
 
