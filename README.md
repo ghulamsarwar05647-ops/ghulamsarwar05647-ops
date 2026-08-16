@@ -337,7 +337,7 @@ Currently developing practical skills through hands-on defensive-security labs.
 
 **Current:** SOC Level 1 Learning Path
 
-**Profile:** [View TryHackMe Profile](T[![TryHackMe](https://img.shields.io/badge/TryHackMe-Profile-red?style=for-the-badge&logo=tryhackme&logoColor=white)](https://tryhackme.com/p/ghulamsarwar05647))
+**Profile:** [View TryHackMe Profile]([![TryHackMe](https://img.shields.io/badge/TryHackMe-Profile-red?style=for-the-badge&logo=tryhackme&logoColor=white)](https://tryhackme.com/p/ghulamsarwar05647)
 
 ---
 
