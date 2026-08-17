@@ -12,9 +12,15 @@
 
 ## 🔗 Connect With Me
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ghulam-mustafa-khan-6771753b8/)
+] 
 
-<p align="center">
 
+<a href="https://app.letsdefend.io/profile/ghulamsarwar05647">
+  <img src="https://img.shields.io/badge/🛡️_LetsDefend-My_Profile-111827?style=for-the-badge" alt="LetsDefend Profile">
+</a>
+
+
+[View TryHackMe Profile]([![TryHackMe](https://img.shields.io/badge/TryHackMe-Profile-red?style=for-the-badge&logo=tryhackme&logoColor=white)](https://tryhackme.com/p/ghulamsarwar05647)
 </p>
 
 ---
