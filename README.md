@@ -159,18 +159,20 @@ The visual layout prioritizes high-fidelity indicators of compromise (IoCs). The
 
 #### 🔹 Panel 1: Real-Time Authentication Failures & Volumetric Spikes
 *This panel monitors authentication logs (EventCode 4625) using mathematical aggregation via the `stats` command to isolate brute force trends before a network breach occurs.*
+<img width="1566" height="682" alt="Brute-Force_tracker   png" src="https://github.com/user-attachments/assets/23ada842-a161-454f-b5a2-71a1eae822ff" />
 
-[PLACEHOLDER: DELETE THIS TEXT AND PASTE YOUR SPONTANEOUS SPIKE / FAILURES SCREENSHOT HERE]
+
 
 #### 🔹 Panel 2: Network Infrastructure Data Outflow (Data Exfiltration Tracker)
 *This panel visualizes data throughput by calculating bytes-to-megabytes transformations using the `eval` command, tracking anomalies where an internal host exceeds baseline transfer thresholds.*
 
-[PLACEHOLDER: DELETE THIS TEXT AND PASTE YOUR DATA EXFILTRATION CHART SCREENSHOT HERE]
+<img width="1561" height="535" alt="Data-Exfiltration-Tracker   png" src="https://github.com/user-attachments/assets/6506a430-4718-4b07-866b-3a8240110045" />
+
 
 #### 🔹 Panel 3: Threat Intelligence Inbound Log Correlation Matrix
 *This component displays live traffic matching against known malicious indicators using active `lookup` schemas, highlighting high-priority alerts for analytical review.*
+<img width="1585" height="677" alt="Threat_Intel_Matrix   png" src="https://github.com/user-attachments/assets/dd199c3a-51c4-4b62-8e2e-516e14151a47" />
 
-[PLACEHOLDER: DELETE THIS TEXT AND PASTE YOUR MATCHED THREAT INTELLIGENCE RESULTS SCREENSHOT HERE]
 
 ---
 
