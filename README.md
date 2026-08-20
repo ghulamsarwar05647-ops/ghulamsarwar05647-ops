@@ -75,6 +75,7 @@ My long-term goal is to work in a high-level cybersecurity environment and speci
 
 * Microsoft Sentinel
 * Splunk
+* Sentinel
 * Elastic Security
 * Log Analysis
 * Detection Rules
@@ -137,6 +138,63 @@ My long-term goal is to work in a high-level cybersecurity environment and speci
 </p>
 
 ---
+
+
+
+# Enterprise SIEM Log Analysis Lab (Splunk)
+
+## 📌 Project Overview
+This project demonstrates the deployment and configuration of an enterprise-grade Security Information and Event Management (SIEM) environment using **Splunk**. The core objective of this lab is to ingest multi-source infrastructure logs, construct optimized Search Processing Language (SPL) queries, and engineer automated correlation rules to detect real-world cyber threats such as Brute Force attacks and data exfiltration.
+
+---
+
+## 📊 Security Operations Center (SOC) Dashboard
+
+### 🔎 Dashboard Description
+The analytical dashboard engineered below serves as a centralized pane of glass for a Level 2 SOC Analyst. It translates raw, unstructured log volumes into structured, actionable security intelligence in real-time. 
+
+The visual layout prioritizes high-fidelity indicators of compromise (IoCs). The top row tracks volatile volumetric anomalies, such as sudden spikes in failed authentication attempts or firewall drops, which instantly flag active brute-force or scanning campaigns. The central matrix displays automated statistical distributions tracking top active users and internal-to-external data transfer ratios to expose malicious insider data staging. The final layer correlates live inbound traffic against external threat intelligence lists, instantly isolating malicious external IP addresses interacting with critical network components.
+
+### 🖼️ Dashboard Architecture Screenshots
+
+#### 🔹 Panel 1: Real-Time Authentication Failures & Volumetric Spikes
+*This panel monitors authentication logs (EventCode 4625) using mathematical aggregation via the `stats` command to isolate brute force trends before a network breach occurs.*
+
+[PLACEHOLDER: DELETE THIS TEXT AND PASTE YOUR SPONTANEOUS SPIKE / FAILURES SCREENSHOT HERE]
+
+#### 🔹 Panel 2: Network Infrastructure Data Outflow (Data Exfiltration Tracker)
+*This panel visualizes data throughput by calculating bytes-to-megabytes transformations using the `eval` command, tracking anomalies where an internal host exceeds baseline transfer thresholds.*
+
+[PLACEHOLDER: DELETE THIS TEXT AND PASTE YOUR DATA EXFILTRATION CHART SCREENSHOT HERE]
+
+#### 🔹 Panel 3: Threat Intelligence Inbound Log Correlation Matrix
+*This component displays live traffic matching against known malicious indicators using active `lookup` schemas, highlighting high-priority alerts for analytical review.*
+
+[PLACEHOLDER: DELETE THIS TEXT AND PASTE YOUR MATCHED THREAT INTELLIGENCE RESULTS SCREENSHOT HERE]
+
+---
+
+## 🛠️ Core SPL Hunting Signatures Employed
+
+### 1. Brute Force Detection Signature
+```splunk
+index=main (EventCode=4624 OR EventCode=4625)
+| stats count(eval(EventCode=4625)) as Failed_Attempts, count(eval(EventCode=4624)) as Successful_Attempts by user
+| where Failed_Attempts > 5 AND Successful_Attempts > 0
+```
+
+### 2. High-Volume Outbound Exfiltration Signature
+```splunk
+index=network_logs
+| stats avg(bytes_sent) as normal_average, max(bytes_sent) as current_transfer by user
+| eval danger_line = normal_average * 3
+| where current_transfer > danger_line
+```
+
+
+
+
+
 
 # 🚨 SOC / Blue Team Projects
 
