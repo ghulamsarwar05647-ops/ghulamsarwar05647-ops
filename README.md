@@ -196,6 +196,58 @@ index=network_logs
 
 
 
+# 📊 My Top 5 Essential Security SPL Commands
+
+This section documents my core competency in **Search Processing Language (SPL)**. These commands are engineered to parse raw infrastructure data, calculate volumetric traffic, and hunt for hidden security anomalies.
+
+---
+
+### 1. The Threat Aggregator (`STATS`)
+* **Objective:** Group network event signatures to identify high-frequency threat clusters.
+* **What it proves:** You know how to aggregate data and count risk occurrences by signature types.
+```spl
+index=_internal
+| stats count by component
+| sort - count
+```
+
+### 2. High-Frequency Vector Isolation (`TOP`)
+* **Objective:** Instantly isolate top talkers or aggressive log noise channels.
+* **What it proves:** You can isolate chatterboxes and high-frequency anomaly vectors automatically.
+```spl
+index=_internal
+| top limit=10 log_level
+```
+
+### 3. Anomaly & Threat Hunting (`RARE`)
+* **Objective:** Find the "needle in the haystack." In security, attackers hide in low-frequency system events.
+* **What it proves:** Threat hunting capability. This query flags structural anomalies by finding the rarest 5 executed code modules.
+```spl
+index=_internal
+| rare limit=5 group
+```
+
+### 4. Volumetric Bandwidth Engineering (`EVAL`)
+* **Objective:** Calculate exact network packet transmission weights in human-readable Megabytes.
+* **What it proves:** You can manipulate strings, calculate byte metrics, and build custom calculated fields on the fly.
+```spl
+index=_internal
+| eval Megabytes = round(len(_raw) / 1024 / 1024, 4)
+| table _time, component, log_level, Megabytes
+| sort - Megabytes
+```
+
+### 5. Threat Intelligence Enrichment (`LOOKUP`)
+* **Objective:** Match live infrastructure traffic tables against a signature watchlist database.
+* **What it proves:** You understand how to enrich raw data using lookup table matrices to append context dynamically.
+```spl
+index=_internal
+| lookup alert_actions.csv action OUTPUT label
+| table _time, component, action, label
+```
+
+
+
 
 
 # 🚨 SOC / Blue Team Projects
