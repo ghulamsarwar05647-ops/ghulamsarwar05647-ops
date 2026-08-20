@@ -250,6 +250,52 @@ index=_internal
 
 
 
+# ====================================================================
+# [RULE-01] DETECTION VECTOR: BRUTE FORCE & IDENTITY THREATS
+# ====================================================================
+[Authentication_Brute_Force_Detected]
+search = index=security sourcetype=WinEventLog:Security EventCode=4625 | stats count by src_ip, user | where count > 10
+cron_schedule = */5 * * * *
+dispatch.earliest_time = -5m
+dispatch.latest_time = now
+action.email = 1
+action.email.to = soc-alerts@company.com
+action.email.subject = [CRITICAL ALERT] Threat Actor Brute Force Loop In Progress
+alert_type = number of events
+alert_comparator = greater than
+alert_threshold = 0
+description = Triggers when a unique IP exceeds 10 authentication failures within a rolling 5-minute window.
+
+# ====================================================================
+# [RULE-02] DETECTION VECTOR: PERIMETER DATA EXFILTRATION RADAR
+# ====================================================================
+[Network_Data_Exfiltration_Anomalous_Egress]
+search = index=network sourcetype=pan:traffic | eval payload_mb = bytes_out/1024/1024 | stats sum(payload_mb) as total_outbound by src_ip | where total_outbound > 5000
+cron_schedule = */15 * * * *
+dispatch.earliest_time = -15m
+dispatch.latest_time = now
+action.webhook = 1
+action.webhook.uri = https://company.com
+description = Alerts when an internal host pushes more than 5GB of raw outbound data over network parameters in 15 minutes.
+
+# ====================================================================
+# [RULE-03] DETECTION VECTOR: CRITICAL THREAT INTEL MATRIX STRIKE
+# ====================================================================
+[Threat_Intel_Malicious_IP_Correlation]
+search = index=firewall log_level=ERROR component="Threat Signature Vector"
+cron_schedule = * * * * *
+dispatch.earliest_time = -1m
+dispatch.latest_time = now
+action.slack = 1
+action.slack.channel = #soc-emergency-response
+description = Real-time instantaneous alert firing when a structural log signature flags a critical severity vector block.
+
+
+
+
+index=_internal
+
+
 # 🚨 SOC / Blue Team Projects
 
 ## 01 — Enterprise SIEM Log Analysis Lab
