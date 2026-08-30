@@ -245,6 +245,9 @@ index=_internal
 | lookup alert_actions.csv action OUTPUT label
 | table _time, component, action, label
 ```
+MY FRIST SEARCH OF MY CYBER SECURITY CARRER.
+
+<img width="1911" height="982" alt="image" src="https://github.com/user-attachments/assets/86d3e43f-3058-43b4-88c2-16f1c7dae11a" />
 
 
 
