@@ -23,7 +23,10 @@
 [View TryHackMe Profile]([![TryHackMe](https://img.shields.io/badge/TryHackMe-Profile-red?style=for-the-badge&logo=tryhackme&logoColor=white)](https://tryhackme.com/p/ghulamsarwar05647)
 </p>
 
+
+[![Splunk Profile](https://img.shields.io/badge/Splunk%20Profile-View%20Profile-black?logo=splunk&logoColor=white)](https://education.splunk.com/Saba/Web_spf/NA10P2PRD105/app/me/uiprofile)
 ---
+
 
 # 👨‍💻 About Me
 
