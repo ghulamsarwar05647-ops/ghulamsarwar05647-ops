@@ -14,8 +14,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ghulam-mustafa-khan-6771753b8/)
 ] 
 
-[![MyFirstHack](https://img.shields.io/badge/MyFirstHack-My%20Profile-blue?style=for-the-badge)](https://myfirsthack.com/ghulamsarwar05647)
-
+[![MyFirstHack](https://img.shields.io/badge/MyFirstHack-My%20Profile-blue?style=for-the-badge)](https://myfirsthack.com/profile)
 
 <a href="https://app.letsdefend.io/profile/ghulamsarwar05647">
   <img src="https://img.shields.io/badge/🛡️_LetsDefend-My_Profile-111827?style=for-the-badge" alt="LetsDefend Profile">
